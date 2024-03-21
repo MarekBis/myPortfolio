@@ -1,13 +1,13 @@
-// import obrazku
-import Test from '../assets/realestate.jpg'
 import Movies from '../assets/screenshots/movies.png'
+import Kurz from '../assets/screenshots/primapenzion.png'
+import JSTAIL from '../assets/screenshots/styling.png'
 export const data = [
     {
         id:1,
         siteName:"React JS TAILWIND mini Project",
-        image:Test,
-        github:"GITHUB",
-        demo:"DEMO",
+        image:JSTAIL,
+        github:"https://github.com/MarekBis/frameworksLearnRepo/tree/main/React/03-react-typescript-Vite-Tailwind",
+        demo:"https://tailwindreactminiproject.netlify.app/",
     },
     {
         id:2,
@@ -17,17 +17,10 @@ export const data = [
         demo:"https://moviesearchbis.netlify.app/",
     },
     {
-        id:3,
-        siteName:"Star Wars API mini app",
-        image:Test,
-        github:"",
-        demo:"",
-    },
-    {
         id:4,
         siteName:"HTML,CSS,PHP with admin customization",
-        image:Test,
-        github:"",
+        image:Kurz,
+        github:"https://github.com/MarekBis/PHP-AdminCustomizablePages",
         demo:"",
     },
 ]

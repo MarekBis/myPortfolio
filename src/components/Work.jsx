@@ -10,10 +10,10 @@ const Project = (props) => {
                     {props.name}
                 </span>
                 <div className='pt-8 text-center'>
-                    <a href={props.demo}>
+                    <a href={props.demo} target='_blank'>
                         <button className='rounded-lg px-4 py-3 m-2 bg-white text-gray-600 font-bold text-lg'>Demo</button>
                     </a>
-                    <a href={props.github}>
+                    <a href={props.github} target='_blank'>
                         <button className='rounded-lg px-4 py-3 m-2 bg-white text-gray-600 font-bold text-lg'>Code</button>
                     </a>
                 </div>
