@@ -5,6 +5,8 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 import PDF from '../assets/pdf/MarekBisCV.pdf'
+
+
 const MediaLink = (props) => {
     const combinedClassName = `${props.color} hidden w-[160px] font-bold text-xl h-[60px] lg:flex justify-center items-center ml-[-100px] hover:ml-0 ease-in-out duration-300`
 
