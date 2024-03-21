@@ -100,17 +100,17 @@ const Navbar = () => {
                 </Link></li>
                 <li className="text-3xl"><Link onClick={handleClickNav}
                     activeClass="active"
-                    to="skills"
-                    smooth={true}
-                    duration={500}>
-                    Zkušenosti
-                </Link></li>
-                <li className="text-3xl"><Link onClick={handleClickNav}
-                    activeClass="active"
                     to="about"
                     smooth={true}
                     duration={500}>
                     O mně
+                </Link></li>
+                <li className="text-3xl"><Link onClick={handleClickNav}
+                    activeClass="active"
+                    to="skills"
+                    smooth={true}
+                    duration={500}>
+                    Zkušenosti
                 </Link></li>
                 <li className="text-3xl"><Link onClick={handleClickNav}
                     activeClass="active"

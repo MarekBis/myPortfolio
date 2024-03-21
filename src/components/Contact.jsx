@@ -2,7 +2,7 @@
 
 const Contact = () => {
   return (
-    <div name='contact' className="w-full h-[700px] bg-[#0a192f] flex justify-center flex-col items-center p-4">
+    <div name='contact' className="w-full h-fit py-20 md:py-0 md:h-screen bg-[#0a192f] flex justify-center flex-col items-center p-4">
         <form action="https://getform.io/f/jbwxgvva" method="POST" className=" flex flex-col w-[1/5] gap-3">
             <div className="pb-8">
                 <p className="text-4xl font-bold inline border-b-4 border-green-500 text-gray-300 ">Kontakt</p>

@@ -1,5 +1,6 @@
 // import obrazku
 import Test from '../assets/realestate.jpg'
+import Movies from '../assets/screenshots/movies.png'
 export const data = [
     {
         id:1,
@@ -11,9 +12,9 @@ export const data = [
     {
         id:2,
         siteName:"Movie Search mini app",
-        image:Test,
-        github:"",
-        demo:"",
+        image:Movies,
+        github:"https://github.com/MarekBis/reactMovieSearch",
+        demo:"https://moviesearchbis.netlify.app/",
     },
     {
         id:3,
