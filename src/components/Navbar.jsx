@@ -65,7 +65,7 @@ const Navbar = () => {
                         to="skills"
                         smooth={true}
                         duration={500}>
-                        Zkušenosti
+                        Znalosti
                     </Link></li>
                     <li><Link
                         activeClass="active"
@@ -110,7 +110,7 @@ const Navbar = () => {
                     to="skills"
                     smooth={true}
                     duration={500}>
-                    Zkušenosti
+                    Znalosti
                 </Link></li>
                 <li className="text-3xl"><Link onClick={handleClickNav}
                     activeClass="active"
