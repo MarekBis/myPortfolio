@@ -5,16 +5,16 @@ const Project = (props) => {
         <div style={{ backgroundImage: `url(${props.image})` }}
                     className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             {/* hover */}
-            <div id="color" className="opacity-0 text-center group-hover:opacity-100">
+            <div id="color" className="opacity-0 text-center rounded-md group-hover:opacity-100 h-full flex justify-center items-center flex-col">
                 <span className='text-2xl font-bold text-white tracking-wider'>
                     {props.name}
                 </span>
                 <div className='pt-8 text-center'>
                     <a href={props.demo} target='_blank'>
-                        <button className='rounded-lg px-4 py-3 m-2 bg-white text-gray-600 font-bold text-lg'>Demo</button>
+                        <button className='rounded-lg px-4 py-3 m-2 bg-white text-gray-600 font-bold text-lg hover:bg-green-500 hover:text-white'>Demo</button>
                     </a>
                     <a href={props.github} target='_blank'>
-                        <button className='rounded-lg px-4 py-3 m-2 bg-white text-gray-600 font-bold text-lg'>Code</button>
+                        <button className='rounded-lg px-4 py-3 m-2 bg-white text-gray-600 font-bold text-lg hover:bg-green-500 hover:text-white'>Code</button>
                     </a>
                 </div>
             </div>

@@ -126,33 +126,6 @@ const Navbar = () => {
                         </>
                 }
             </div>
-            <div className="flex fixed flex-col lg:hidden top-3 left-0">
-                {/* SIDE MENU MOBILE CLICK */}
-                {
-                    !openSide ?
-                    // SHOWN
-                        <>
-                            {/* <div className="bg-gray-700 hover:bg-slate-600 h-full p-1 flex items-center justify-center w-[60px]" onClick={handleOpenSide}><IoIosArrowBack size={25} /></div>
-                            <ul className="">
-                                <MediaLink dev="mobile" color="bg-[#0a66c2]" icon="linkedin" text="LinkedIn" link="https://www.linkedin.com/in/marek-bis-48467726b/" />
-                                <MediaLink dev="mobile" color="bg-[#333]" icon="github" text="GitHub" link="https://github.com/MarekBis" />
-                                <MediaLink dev="mobile"color="bg-[#d96c0d]" icon="email" text="E-mail" link="mailto:marek.bis5@seznam.com" />
-                                <MediaLink dev="mobile" color="bg-[#06c793]" icon="resume" text="CV" link={PDF} />
-                            </ul> */}
-                        </>
-                        :
-                        // HIDDEN
-                        <>
-                            {/* <div className="h-full p-1 flex items-center justify-center" onClick={handleOpenSide}><IoIosArrowForward size={25} /></div> */}
-                        </>
-                }
-            </div>
-
-
-
-
-
-
 
         </div>
     )
