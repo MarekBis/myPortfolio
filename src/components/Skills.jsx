@@ -31,7 +31,7 @@ const Skills = () => {
                         <Experience icon={PHP} text="PHP"/>
                         <Experience icon={REACT} text="REACT"/>
                         <Experience icon={TAILWIND} text="TAILWIND"/>
-                        <div></div>
+                        <div className='hidden md:block'></div>
                         <Experience icon={GIT} text="GIT"/>
                     </div>
 

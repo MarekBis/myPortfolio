@@ -9,7 +9,7 @@ const Contact = () => {
                 <p className="text-gray-300 py-4">V přiloženém formuláři mě můžete kontaktovat, popřípadě na email: <span className=' hover:text-green-500'>marek.bis@seznam.cz</span></p>
             </div>
             <input className="p-2 bg-[#0a192f] outline-none border-2 text-white border-green-500" type="text" name="name" placeholder="Jméno" required="required" />
-            <input className="p-2 bg-[#0a192f] outline-none border-2 text-white border-green-500" type="email" name="email" placeholder="Přijmení" required="required"/>
+            <input className="p-2 bg-[#0a192f] outline-none border-2 text-white border-green-500" type="email" name="email" placeholder="E-mail" required="required"/>
             <textarea className="p-2 bg-[#0a192f] outline-none border-2 text-white border-green-500" name="message" rows="10" placeholder="Zpráva..." required="required"></textarea>
             <button type="submit" className="text-white border-2 border-green-500 hover:bg-green-500 hover:border-green-500 px-4 py-3 my-3 w-1/4 flex items-center justify-center ">Odeslat</button>
         </form>

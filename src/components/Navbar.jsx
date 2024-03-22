@@ -1,47 +1,23 @@
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
-import { TbBrandVscode } from "react-icons/tb";
+import { FaBars, FaTimes } from "react-icons/fa"
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { useState } from "react";
-import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 import PDF from '../assets/pdf/MarekBisCV.pdf'
+import MediaLink from "./Medialink";
 
 
-const MediaLink = (props) => {
-    const combinedClassName = `${props.color} hidden w-[160px] font-bold text-xl h-[60px] lg:flex justify-center items-center ml-[-100px] hover:ml-0 ease-in-out duration-300`
 
-    const chooseIcon = (iconName) => {
-        switch (iconName) {
-            case 'linkedin':
-                return <FaLinkedin size={30} />;
-            case 'github':
-                return <FaGithub size={30} />;
-            case 'email':
-                return <HiOutlineMail size={30} />;
-            case 'resume':
-                return <BsFillPersonLinesFill size={30} />;
-            default:
-                return <TbBrandVscode size={30} />;
-        }
-    }
-    return (
-        <>
-            <li className={combinedClassName}>
-                <a href={props.link} target="_blank" className="flex justify-between items-center w-full text-gray-300">
-                    {props.text}{chooseIcon(props.icon)}</a>
-            </li>
-        </>
-    )
-}
 
 const Navbar = () => {
+    const [openSide, setOpenSide] = useState(true);
+    const handleOpenSide = () => setOpenSide(!openSide);
+
     const [showNav, setShowNav] = useState(false);
     const handleClickNav = () => setShowNav(!showNav);
 
     return (
-        <div className="fixed w-full h-[56px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50 shadow-md">
+        <div className="fixed w-full h-[56px] flex justify-between items-center pr-4 bg-[#0a192f] text-gray-300 z-50 shadow-md">
             <div className="w-fit h-full">
-                
             </div>
             <div>
                 {/* MENU */}
@@ -127,16 +103,57 @@ const Navbar = () => {
                     Kontakt
                 </Link></li>
             </ul>
+            {/* SOCIAL ICONS  CLICK*/}
 
-            {/* SOCIAL ICONS */}
-            <div className="flex fixed flex-col top-[35%] left-0">
-                <ul>
-                    <MediaLink color="bg-[#0a66c2]" icon="linkedin" text="LinkedIn" link="https://www.linkedin.com/in/marek-bis-48467726b/" />
-                    <MediaLink color="bg-[#333]" icon="github" text="GitHub" link="https://github.com/MarekBis" />
-                    <MediaLink color="bg-[#d96c0d]" icon="email" text="E-mail" link ="mailto:marek.bis5@seznam.com" />
-                    <MediaLink color="bg-[#06c793]" icon="resume" text="CV" link={PDF}/>
-                </ul>
+            <div className="hidden lg:flex lg:fixed lg:flex-col top-[35%] left-0">
+                {/* SIDE MENU PC HOVER */}
+                {
+                    openSide ?
+                    // SHOWN
+                        <>
+                            <div className="bg-gray-700 hover:bg-slate-600 h-full p-1 flex items-center justify-center w-[60px]" onClick={handleOpenSide}><IoIosArrowBack size={25} /></div>
+                            <ul className="">
+                                <MediaLink dev="pc" color="bg-[#0a66c2]" icon="linkedin" text="LinkedIn" link="https://www.linkedin.com/in/marek-bis-48467726b/" />
+                                <MediaLink dev="pc" color="bg-[#333]" icon="github" text="GitHub" link="https://github.com/MarekBis" />
+                                <MediaLink dev="pc" color="bg-[#d96c0d]" icon="email" text="E-mail" link="mailto:marek.bis5@seznam.com" />
+                                <MediaLink dev="pc" color="bg-[#06c793]" icon="resume" text="CV" link={PDF} />
+                            </ul>
+                        </>
+                        :
+                        // HIDDEN
+                        <>
+                            <div className="opacity-60 hover:opacity-100 h-full p-1 flex items-center justify-center" onClick={handleOpenSide}><IoIosArrowForward size={25} /></div>
+                        </>
+                }
             </div>
+            <div className="flex fixed flex-col lg:hidden top-3 left-0">
+                {/* SIDE MENU MOBILE CLICK */}
+                {
+                    !openSide ?
+                    // SHOWN
+                        <>
+                            {/* <div className="bg-gray-700 hover:bg-slate-600 h-full p-1 flex items-center justify-center w-[60px]" onClick={handleOpenSide}><IoIosArrowBack size={25} /></div>
+                            <ul className="">
+                                <MediaLink dev="mobile" color="bg-[#0a66c2]" icon="linkedin" text="LinkedIn" link="https://www.linkedin.com/in/marek-bis-48467726b/" />
+                                <MediaLink dev="mobile" color="bg-[#333]" icon="github" text="GitHub" link="https://github.com/MarekBis" />
+                                <MediaLink dev="mobile"color="bg-[#d96c0d]" icon="email" text="E-mail" link="mailto:marek.bis5@seznam.com" />
+                                <MediaLink dev="mobile" color="bg-[#06c793]" icon="resume" text="CV" link={PDF} />
+                            </ul> */}
+                        </>
+                        :
+                        // HIDDEN
+                        <>
+                            {/* <div className="h-full p-1 flex items-center justify-center" onClick={handleOpenSide}><IoIosArrowForward size={25} /></div> */}
+                        </>
+                }
+            </div>
+
+
+
+
+
+
+
         </div>
     )
 }
