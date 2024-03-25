@@ -12,7 +12,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="max-w-[900px] w-full grid sm:grid-cols-2 gap-8 px-4">
-                    <p>Jmenuji se Marek Bis a je mi 21 let, pocházím z města Ivančice nedaleko od Brna. Už od mala mám rád technologie a proto se jim již dlouhou dobu věnuji. Mým cílem je stát se Full Stack Developerem. Momentálně se ucházím o juniorní pozici pro začátek. Baví mě se učit nové věci, proto se každý den vzdělávám a zdokonaluji svoje dosavadní znalosti v oboru.</p>
+                    <p>Jmenuji se Marek Bis a je mi 21 let. Pocházím z města Ivančice nedaleko od Brna. Už od mala mám rád technologie, a proto se jim již dlouhou dobu věnuji. Mým cílem je stát se Full Stack Developerem. Momentálně se ucházím o juniorní pozici pro start. Baví mě učit se nové věci, proto se každý den vzdělávám a zdokonaluji svoje dosavadní znalosti v oboru.</p>
 
                     <div className="text-3xl hidden sm:block font-bold">
                         <p>Vítej na mém portfoliu. Tuto stránku aktivně aktualizuji</p>

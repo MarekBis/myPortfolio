@@ -13,7 +13,7 @@ const Contact = () => {
                 </p>
                 <p className="text-gray-300 py-4">
                   Konktaktovat mě můžete v přiloženém formuláři, popřípadě přímo na můj email: 
-                 <span onClick={()=>copy("marek.bis5@seznam.cz")} className='group active:text-green-500 cursor-pointer'>  
+                 <span onClick={()=>copy(" marek.bis5@seznam.cz")} className='group active:text-green-500 cursor-pointer'>  
                    marek.bis5@seznam.cz
                   </span>
                  </p>
