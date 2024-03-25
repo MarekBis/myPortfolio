@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className='text-4xl sm:text-7xl font-bold'>Marek Bis</h1>
         <h2 className='text-3xl sm:text-6xl font-bold text-[#8892b0]'>Jsem Junior Front End Developer.</h2>
         <p className='text-[#8892b0] py-4 max-w-[700px]'>
-          Od školy se věnuji Informačním technnologiím, momentálně jsem zaměřený na FullStack Web Development.
+          Již od školy se věnuji Informačním technnologiím, momentálně jsem zaměřený na FullStack Web Development.
         </p>
         <div>
           <Link
