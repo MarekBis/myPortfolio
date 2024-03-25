@@ -3,9 +3,9 @@ import { data } from '../data/projectData'
 const Project = (props) => {
     return (
         <div style={{ backgroundImage: `url(${props.image})` }}
-                    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+                    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto hover:scale-105 duration-200 ease-in-out content-div">
             {/* hover */}
-            <div id="color" className="opacity-0 text-center rounded-md group-hover:opacity-100 h-full w-full flex justify-center items-center flex-col">
+            <div id="color" className="opacity-0  text-center rounded-md group-hover:opacity-100 h-full w-full flex justify-center items-center flex-col">
                 <div className='p-2 bg-black bg-opacity-50 w-full '>
                 <span className='text-xl font-bold text-white'>
                     {props.name}
@@ -42,7 +42,7 @@ const Work = () => {
                     <p className="py-6">Moje dosavadní mini projekty. Více ukázek kódů můžete nalézt na mém githubu.</p>
                 </div>
                 {/* CONTAINER PROJECTS */}
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4  ">
                     {/* PROJECT CARD */}
                     {data.map((project, index) => {
                         return <div key={index}>

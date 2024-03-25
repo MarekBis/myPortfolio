@@ -22,41 +22,51 @@ const Navbar = () => {
             <div>
                 {/* MENU */}
                 <ul className="hidden md:flex">
-                    <li><Link
+                    <Link
                         activeClass="active"
                         to="home"
                         smooth={true}
                         duration={500}>
-                        Domů
-                    </Link></li>
-                    <li><Link
+                        <li>
+                            Domů
+                        </li>
+                    </Link>
+                    <Link
                         activeClass="active"
                         to="about"
                         smooth={true}
                         duration={500}>
-                        O mně
-                    </Link></li>
-                    <li><Link
+                        <li>
+                            O mně
+                        </li>
+                    </Link>
+                    <Link
                         activeClass="active"
                         to="skills"
                         smooth={true}
                         duration={500}>
-                        Znalosti
-                    </Link></li>
-                    <li><Link
+                        <li>
+                            Znalosti
+                        </li>
+                    </Link>
+                    <Link
                         activeClass="active"
                         to="work"
                         smooth={true}
                         duration={500}>
-                        Projekty
-                    </Link></li>
-                    <li><Link
+                        <li>
+                            Projekty
+                        </li>
+                    </Link>
+                    <Link
                         activeClass="active"
                         to="contact"
                         smooth={true}
                         duration={500}>
-                        Kontakt
-                    </Link></li>
+                        <li>
+                            Kontakt
+                        </li>
+                    </Link>
                 </ul>
             </div>
 
@@ -67,41 +77,51 @@ const Navbar = () => {
 
             {/* MOBILE MENU */}
             <ul className={showNav ? "top-0 left-0 w-full z-10 h-screen bg-[#0a192f] absolute md:hidden flex flex-col justify-center items-center" : 'hidden'}>
-                <li className="text-3xl"><Link onClick={handleClickNav}
+                    <Link onClick={handleClickNav}
                     activeClass="active"
                     to="home"
                     smooth={true}
                     duration={500}>
+                <li className="text-3xl">
                     Domů
-                </Link></li>
-                <li className="text-3xl"><Link onClick={handleClickNav}
+                </li>
+                </Link>
+                    <Link onClick={handleClickNav}
                     activeClass="active"
                     to="about"
                     smooth={true}
                     duration={500}>
+                <li className="text-3xl">
                     O mně
-                </Link></li>
-                <li className="text-3xl"><Link onClick={handleClickNav}
+                </li>
+                </Link>
+                    <Link onClick={handleClickNav}
                     activeClass="active"
                     to="skills"
                     smooth={true}
                     duration={500}>
+                <li className="text-3xl">
                     Znalosti
-                </Link></li>
-                <li className="text-3xl"><Link onClick={handleClickNav}
+                </li>
+                </Link>
+                    <Link onClick={handleClickNav}
                     activeClass="active"
                     to="work"
                     smooth={true}
                     duration={500}>
+                <li className="text-3xl">
                     Projekty
-                </Link></li>
-                <li className="text-3xl"><Link onClick={handleClickNav}
+                    </li>
+                </Link>
+                    <Link onClick={handleClickNav}
                     activeClass="active"
                     to="contact"
                     smooth={true}
                     duration={500}>
+                <li className="text-3xl">
                     Kontakt
-                </Link></li>
+                </li>
+                </Link>
             </ul>
             {/* SOCIAL ICONS  CLICK*/}
 
@@ -109,7 +129,7 @@ const Navbar = () => {
                 {/* SIDE MENU PC HOVER */}
                 {
                     openSide ?
-                    // SHOWN
+                        // SHOWN
                         <>
                             <div className="bg-gray-700 hover:bg-slate-600 h-full p-1 flex items-center justify-center w-[60px]" onClick={handleOpenSide}><IoIosArrowBack size={25} /></div>
                             <ul className="">
