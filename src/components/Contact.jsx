@@ -1,7 +1,7 @@
 "use client";
 
 import copy from 'copy-to-clipboard';
-import { Button, Tooltip } from "flowbite-react";
+import { Tooltip } from "flowbite-react";
 const Contact = () => {
 
 
