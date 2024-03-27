@@ -5,6 +5,8 @@ import JAVASCRIPT from '../assets/javascript.png'
 import REACT from '../assets/react.png'
 import TAILWIND from '../assets/tailwind.png'
 import PHP from '../assets/php.png'
+import FLOWBITE from '../assets/flowbite.svg'
+import MYSQL from '../assets/mysql.svg'
 
 
 const Experience = (props) => {
@@ -24,14 +26,15 @@ const Skills = () => {
                 <div className='max-w-[900px] w-full px-4 '>
                     <h2 className='text-4xl font-bold border-b-4 border-green-500 inline'>Znalosti</h2>
                     <p className='pt-6 pb-4'>Výběr z technologií, se kterými již mám zkušenosti.</p>
-                    <div className='mt-8 grid-cols-2 sm:grid-cols-3 grid gap-3'>
+                    <div className='mt-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 grid gap-2'>
                         <Experience icon={HTML} text="HTML" />
-                        <Experience icon={CSS} text="CSS" />
                         <Experience icon={JAVASCRIPT} text="JAVASCRIPT"/>
-                        <Experience icon={PHP} text="PHP"/>
                         <Experience icon={REACT} text="REACT"/>
+                        <Experience icon={CSS} text="CSS" />
                         <Experience icon={TAILWIND} text="TAILWIND"/>
-                        <div className='hidden md:block'></div>
+                        <Experience icon={FLOWBITE} text="FLOWBITE"/>
+                        <Experience icon={PHP} text="PHP"/>
+                        <Experience icon={MYSQL} text="MYSQL"/>
                         <Experience icon={GIT} text="GIT"/>
                     </div>
 
