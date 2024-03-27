@@ -14,7 +14,7 @@ export const data = [
     {
         id: 2,
         siteName: "Responsive web",
-        languages: "React JS TAILWIND",
+        languages: "REACT JS TAILWIND",
         image: JSTAIL,
         github: "https://github.com/MarekBis/frameworksLearnRepo/tree/main/React/03-react-typescript-Vite-Tailwind",
         demo: "https://tailwindreactminiproject.netlify.app/",
@@ -30,7 +30,7 @@ export const data = [
     {
         id: 4,
         siteName: "This portfolio",
-        languages: "React JS TAILWIND",
+        languages: "REACT JS TAILWIND FLOWBITE",
         image: RESUME,
         github: "https://github.com/MarekBis/myPortfolio",
         demo: "",
