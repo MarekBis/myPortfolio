@@ -44,8 +44,8 @@ const Work = () => {
                 {/* CONTAINER PROJECTS */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4  ">
                     {/* PROJECT CARD */}
-                    {data.map((project, index) => {
-                        return <div key={index}>
+                    {data.map((project) => {
+                        return <div key={project.id}>
                             <Project name={project.siteName}
                             languages={project.languages}
                             image={project.image}

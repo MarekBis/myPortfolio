@@ -2,6 +2,7 @@ import Movies from '../assets/screenshots/movies.png'
 import Kurz from '../assets/screenshots/primapenzion.png'
 import JSTAIL from '../assets/screenshots/styling.png'
 import RESUME from '../assets/screenshots/portfolio.png'
+import WEATHER from '../assets/screenshots/weather.png'
 export const data = [
     {
         id: 1,
@@ -10,6 +11,14 @@ export const data = [
         image: Movies,
         github: "https://github.com/MarekBis/reactMovieSearch",
         demo: "https://moviesearchbis.netlify.app/",
+    },
+    {
+        id: 5,
+        siteName: "Weather App",
+        languages: "REACT JS",
+        image: WEATHER,
+        github: "https://github.com/MarekBis/reactWeatherApp",
+        demo: "https://weatherappbis.netlify.app/",
     },
     {
         id: 2,
