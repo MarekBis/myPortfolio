@@ -3,6 +3,7 @@ import Kurz from '../assets/screenshots/primapenzion.png'
 import JSTAIL from '../assets/screenshots/styling.png'
 import RESUME from '../assets/screenshots/portfolio.png'
 import WEATHER from '../assets/screenshots/weather.png'
+import CARD from '../assets/screenshots/card.png'
 export const data = [
     {
         id: 1,
@@ -43,6 +44,14 @@ export const data = [
         image: RESUME,
         github: "https://github.com/MarekBis/myPortfolio",
         demo: "",
+    },
+    {
+        id: 5,
+        siteName: "Card frontend",
+        languages: "REACT JS TAILWIND",
+        image: CARD,
+        github: "https://github.com/MarekBis/learningRepository/tree/main/FrontEndMentor/card",
+        demo: "https://genuine-pavlova-96c75c.netlify.app/",
     }
 
 ]
